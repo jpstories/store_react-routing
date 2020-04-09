@@ -1,0 +1,82 @@
+.main{
+    display: flex;
+    flex-flow: row;
+    height: calc(100vh - 80px);
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.main__default{
+    width: 100%;
+    height: 100%;
+    background: rgb(23, 98, 184);
+    color: rgb(240, 240, 240);
+    font-size: 0.7em;
+}
+
+.main__default h1{
+    margin: 25px 10px;
+}
+
+.aside__nav{
+    min-width: 250px;
+    height: 100%;
+    background: rgb(238, 238, 238);
+    color: black;
+    box-shadow: -2px 0 5px 1px rgb(128, 128, 128);
+}
+
+.aside__nav-ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+    align-items: left;
+    margin-top: 25px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    font-weight: 700;
+}
+
+.aside__nav-li{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    transition: 0.3s;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.aside__nav-li:hover{
+    transform: translateX(10px);
+}
+
+.aside__nav-li a:hover{
+    color: rgb(68, 68, 68);
+    border-bottom: 2px solid rgb(71, 71, 71);
+}
+
+.aside__nav-li a{
+    transition: 0.1s;
+}
+
+.projectImg{
+    width: 80px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.active{
+    border-left: 8px solid rgb(53, 53, 53);
+    padding-left: 10px;
+    transform: translateX(15px);
+    color: rgb(48, 48, 48);
+}
